@@ -1,12 +1,13 @@
 # Valorant Randomizer
 A simply and funny software idea for my friends. Simply generates a random weapon &amp; agent to use depending on multiple factors, with maybe some... twists I guess?
 
-### Main Features:
+### Main Features: (Priority/100% included)
 - Generate a random choice of the following categories:
   - Agents
   - Weapons
 
-### Extra Features:
+
+### Extra Features: (Not a priority/might not be included)
 - Generate a random choice of the following categories:
   - Abilities
   - Rules?
