@@ -23,5 +23,5 @@ A simply and funny software idea for my friends. Simply generates a random weapo
 
 
 ### Building the project:
-- 123
+- TBD
 
