@@ -32,7 +32,7 @@ namespace JumasValorantRandomizer
 
             for (int i = 0; i < numberOfAgents; i++)
             {
-                agentButtons[i] = new AgentButton(100, 100, (i % 6) * (100 + 5) + 10, (i/6) * (100 + 5) + 50);
+                agentButtons[i] = new AgentButton(100, 100, (i % 6) * (100 + 5) + 10, (i/6) * (100 + 5) + 10);
                 agentButtons[i].Click += new EventHandler(agentButtons[i].Toggler);
 
                 //Testing Colors & Debug

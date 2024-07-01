@@ -32,6 +32,7 @@
             this.agentBtn = new System.Windows.Forms.Button();
             this.loadoutBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.questBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // agentBtn
@@ -75,12 +76,27 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // questBtn
+            // 
+            this.questBtn.AccessibleName = "";
+            this.questBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.questBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.questBtn.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questBtn.ForeColor = System.Drawing.Color.White;
+            this.questBtn.Location = new System.Drawing.Point(9, 138);
+            this.questBtn.Name = "questBtn";
+            this.questBtn.Size = new System.Drawing.Size(120, 56);
+            this.questBtn.TabIndex = 3;
+            this.questBtn.Text = "Quest Randomizer";
+            this.questBtn.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.questBtn);
             this.Controls.Add(this.agentBtn);
             this.Controls.Add(this.loadoutBtn);
             this.Controls.Add(this.panel1);
@@ -98,6 +114,7 @@
         private System.Windows.Forms.Button agentBtn;
         private System.Windows.Forms.Button loadoutBtn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button questBtn;
     }
 }
 
