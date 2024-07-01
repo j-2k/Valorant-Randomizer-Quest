@@ -26,5 +26,5 @@ A simple and funny software idea for my friends. Simply generates a random weapo
 
 ### Building the project:
 - I used VS 2022 & .NET Framework 4.8
-- 
+- WIP
 
