@@ -46,36 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgentButton.cs">
+    <Compile Include="src\AgentButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="AgentForm.cs">
+    <Compile Include="src\AgentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgentForm.Designer.cs">
+    <Compile Include="src\AgentForm.Designer.cs">
       <DependentUpon>AgentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form.cs">
+    <Compile Include="src\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form.Designer.cs">
+    <Compile Include="src\Form.Designer.cs">
       <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoadoutForm.cs">
+    <Compile Include="src\LoadoutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadoutForm.Designer.cs">
+    <Compile Include="src\LoadoutForm.Designer.cs">
       <DependentUpon>LoadoutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AgentForm.resx">
+    <EmbeddedResource Include="src\AgentForm.resx">
       <DependentUpon>AgentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form.resx">
+    <EmbeddedResource Include="src\Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoadoutForm.resx">
+    <EmbeddedResource Include="src\LoadoutForm.resx">
       <DependentUpon>LoadoutForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
