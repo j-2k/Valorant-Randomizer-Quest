@@ -33,10 +33,11 @@
             // 
             // loadoutGenBtn
             // 
-            this.loadoutGenBtn.Location = new System.Drawing.Point(519, 512);
+            this.loadoutGenBtn.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadoutGenBtn.Location = new System.Drawing.Point(535, 430);
             this.loadoutGenBtn.Name = "loadoutGenBtn";
-            this.loadoutGenBtn.Size = new System.Drawing.Size(115, 37);
-            this.loadoutGenBtn.TabIndex = 0;
+            this.loadoutGenBtn.Size = new System.Drawing.Size(100, 100);
+            this.loadoutGenBtn.TabIndex = 2;
             this.loadoutGenBtn.Text = "Generate Loadout";
             this.loadoutGenBtn.UseVisualStyleBackColor = true;
             this.loadoutGenBtn.Click += new System.EventHandler(this.loadoutGenBtn_Click);

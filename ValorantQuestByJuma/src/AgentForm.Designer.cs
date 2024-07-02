@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgentForm));
             this.agentGenBtn = new System.Windows.Forms.Button();
             this.generatedAgentBtn = new System.Windows.Forms.Button();
+            this.genCounter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // agentGenBtn
@@ -46,7 +47,7 @@
             // 
             // generatedAgentBtn
             // 
-            this.generatedAgentBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.generatedAgentBtn.BackColor = System.Drawing.Color.White;
             this.generatedAgentBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("generatedAgentBtn.BackgroundImage")));
             this.generatedAgentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.generatedAgentBtn.Cursor = System.Windows.Forms.Cursors.Default;
@@ -54,15 +55,27 @@
             this.generatedAgentBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.generatedAgentBtn.FlatAppearance.BorderSize = 2;
             this.generatedAgentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.generatedAgentBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generatedAgentBtn.Font = new System.Drawing.Font("Cascadia Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generatedAgentBtn.ForeColor = System.Drawing.Color.Yellow;
             this.generatedAgentBtn.Location = new System.Drawing.Point(430, 430);
             this.generatedAgentBtn.Name = "generatedAgentBtn";
             this.generatedAgentBtn.Size = new System.Drawing.Size(100, 100);
             this.generatedAgentBtn.TabIndex = 3;
-            this.generatedAgentBtn.Text = "Test";
+            this.generatedAgentBtn.Text = "Random agent will appear here!";
             this.generatedAgentBtn.UseVisualStyleBackColor = false;
             this.generatedAgentBtn.Click += new System.EventHandler(this.generatedAgentBtn_Click);
+            // 
+            // genCounter
+            // 
+            this.genCounter.BackColor = System.Drawing.Color.White;
+            this.genCounter.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genCounter.Location = new System.Drawing.Point(325, 430);
+            this.genCounter.Name = "genCounter";
+            this.genCounter.Size = new System.Drawing.Size(100, 100);
+            this.genCounter.TabIndex = 4;
+            this.genCounter.Text = "82743";
+            this.genCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.genCounter.Click += new System.EventHandler(this.genCounter_Click);
             // 
             // AgentForm
             // 
@@ -71,6 +84,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(646, 561);
+            this.Controls.Add(this.genCounter);
             this.Controls.Add(this.generatedAgentBtn);
             this.Controls.Add(this.agentGenBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -85,5 +99,6 @@
 
         private System.Windows.Forms.Button agentGenBtn;
         private System.Windows.Forms.Button generatedAgentBtn;
+        private System.Windows.Forms.Label genCounter;
     }
 }

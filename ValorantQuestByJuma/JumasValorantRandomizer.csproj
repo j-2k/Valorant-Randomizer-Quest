@@ -86,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -100,8 +101,56 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="images\" />
+    <None Include="images\AgentIcons\1_icon.png" />
+    <None Include="images\AgentIcons\2_icon.png" />
+    <None Include="images\AgentIcons\3_icon.png" />
+    <None Include="images\AgentIcons\4_icon.png" />
+    <None Include="images\AgentIcons\5_icon.png" />
+    <None Include="images\AgentIcons\6_icon.png" />
+    <None Include="images\AgentIcons\7_icon.png" />
+    <None Include="images\AgentIcons\8_icon.png" />
+    <None Include="images\AgentIcons\9_icon.png" />
+    <None Include="images\AgentIcons\10_icon.png" />
+    <None Include="images\AgentIcons\11_icon.png" />
+    <None Include="images\AgentIcons\12_icon.png" />
+    <None Include="images\AgentIcons\13_icon.png" />
+    <None Include="images\AgentIcons\14_icon.png" />
+    <None Include="images\AgentIcons\15_icon.png" />
+    <None Include="images\AgentIcons\16_icon.png" />
+    <None Include="images\AgentIcons\17_icon.png" />
+    <None Include="images\AgentIcons\18_icon.png" />
+    <None Include="images\AgentIcons\19_icon.png" />
+    <None Include="images\AgentIcons\20_icon.png" />
+    <None Include="images\AgentIcons\21_icon.png" />
+    <None Include="images\AgentIcons\22_icon.png" />
+    <None Include="images\AgentIcons\23_icon.png" />
+    <None Include="images\AgentIcons\24_icon.png" />
+    <Content Include="images\AgentIcons\Astra_icon.png" />
+    <Content Include="images\AgentIcons\Breach_icon.png" />
+    <Content Include="images\AgentIcons\Brimstone_icon.png" />
+    <Content Include="images\AgentIcons\Chamber_icon.png" />
+    <Content Include="images\AgentIcons\Clove_icon.png" />
+    <Content Include="images\AgentIcons\Cypher_icon.png" />
+    <Content Include="images\AgentIcons\Deadlock_icon.png" />
+    <Content Include="images\AgentIcons\Fade_icon.png" />
+    <Content Include="images\AgentIcons\Gekko_icon.png" />
+    <Content Include="images\AgentIcons\Harbor_icon.png" />
+    <Content Include="images\AgentIcons\Iso_icon.png" />
+    <Content Include="images\AgentIcons\Jett_icon.png" />
+    <Content Include="images\AgentIcons\KAYO_icon.png" />
+    <Content Include="images\AgentIcons\Killjoy_icon.png" />
+    <Content Include="images\AgentIcons\Neon_icon.png" />
+    <Content Include="images\AgentIcons\Omen_icon.png" />
+    <Content Include="images\AgentIcons\Phoenix_icon.png" />
+    <Content Include="images\AgentIcons\Raze_icon.png" />
+    <Content Include="images\AgentIcons\Reyna_icon.png" />
+    <Content Include="images\AgentIcons\Sage_icon.png" />
+    <Content Include="images\AgentIcons\Skye_icon.png" />
+    <Content Include="images\AgentIcons\Sova_icon.png" />
+    <Content Include="images\AgentIcons\Viper_icon.png" />
+    <Content Include="images\AgentIcons\Yoru_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

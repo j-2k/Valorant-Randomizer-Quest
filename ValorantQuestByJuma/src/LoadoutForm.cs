@@ -17,12 +17,12 @@ namespace JumasValorantRandomizer
             InitializeComponent();
         }
 
-        private void loadoutGenBtn_Click(object sender, EventArgs e)
+        private void LoadoutForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void LoadoutForm_Load(object sender, EventArgs e)
+        private void loadoutGenBtn_Click(object sender, EventArgs e)
         {
 
         }

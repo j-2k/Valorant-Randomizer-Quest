@@ -16,7 +16,7 @@ namespace JumasValorantRandomizer
 
         List<int> agentListReference;
 
-        public AgentButton(int sizeX, int sizeY, int posX, int posY, int agentIndex, ref List<int> activeAgentList)
+        public AgentButton(int sizeX, int sizeY, int posX, int posY, int incAgentIndex, ref List<int> activeAgentList)
         {
             this.Text = "";
             this.Size = new System.Drawing.Size(sizeX, sizeY);
@@ -26,8 +26,13 @@ namespace JumasValorantRandomizer
             this.FlatAppearance.BorderSize = 2;
             this.FlatAppearance.BorderColor = Color.Black;
 
-            this.agentIndex = agentIndex;
+            this.agentIndex = incAgentIndex;
             this.agentListReference = activeAgentList;
+
+            this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject($"_{agentIndex+1}_icon");
+            //this.ImageAlign = ContentAlignment.MiddleCenter;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            //this.BackColor = Color.FromArgb(255,255,255,255);
         }
 
         public void Toggler(object sender, EventArgs e)

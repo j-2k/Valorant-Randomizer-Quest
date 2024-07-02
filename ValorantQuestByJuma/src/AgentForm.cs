@@ -29,19 +29,34 @@ namespace JumasValorantRandomizer
             InitializeComponent();
         }
 
+        int countClick = 0;
         private void agentGenBtn_Click(object sender, EventArgs e)
         {
-            if(currActiveAgents.Count() < 1) { generatedAgentBtn.Text = "Add agents!"; return; }
+            if(currActiveAgents.Count() < 1) { 
+                generatedAgentBtn.BackgroundImage = null;  
+                generatedAgentBtn.BackColor = Color.White; 
+                generatedAgentBtn.Text = "Add agents!"; return; 
+            }
 
             int randomNum = currActiveAgents[rng.Next(currActiveAgents.Count())];
 
             //generatedAgentBtn.ForeColor = Color.BlueViolet; //disabled buttons will not reflect their color being changed to show they are "disabled"
-            generatedAgentBtn.Text = randomNum.ToString();
+            //generatedAgentBtn.Text = randomNum.ToString();
 
+            generatedAgentBtn.Text = "";
+            generatedAgentBtn.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject($"_{randomNum + 1}_icon");
+            generatedAgentBtn.BackColor = Color.FromArgb(255, rng.Next(256), rng.Next(256), rng.Next(256));
+            countClick++;
+            genCounter.Text = countClick.ToString();
         }
+
 
         private void AgentForm_Load(object sender, EventArgs e)
         {
+            genCounter.Text = "";
+            generatedAgentBtn.BackgroundImage = null;
+            generatedAgentBtn.Text = "Random agent will appear here!";
+
             agentButtons = new AgentButton[numberOfAgents];
 
             for (int i = 0; i < numberOfAgents; i++)
@@ -49,11 +64,13 @@ namespace JumasValorantRandomizer
                 agentButtons[i] = new AgentButton(100, 100, (i % 6) * (100 + 5) + 10, (i/6) * (100 + 5) + 10, i, ref currActiveAgents);
                 agentButtons[i].Click += new EventHandler(agentButtons[i].Toggler);
 
+                /*
                 //Testing Colors & Debug
                 agentButtons[i].Text = i.ToString();
                 agentButtons[i].ForeColor = Color.YellowGreen;
                 int colCalc = (int)(   (1f - ((float)i / (float)numberOfAgents))   * 255f);
                 agentButtons[i].BackColor = Color.FromArgb(255, colCalc, colCalc, colCalc);
+                */
 
                 this.Controls.Add(agentButtons[i]);
             }
@@ -62,6 +79,11 @@ namespace JumasValorantRandomizer
         private void generatedAgentBtn_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void genCounter_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
