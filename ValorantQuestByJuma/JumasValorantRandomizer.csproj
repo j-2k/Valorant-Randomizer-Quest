@@ -103,6 +103,24 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="images\LoadoutIcons\Ares.png" />
+    <Content Include="images\LoadoutIcons\Bucky.png" />
+    <Content Include="images\LoadoutIcons\Bulldog.png" />
+    <Content Include="images\LoadoutIcons\Classic.png" />
+    <Content Include="images\LoadoutIcons\Frenzy.png" />
+    <Content Include="images\LoadoutIcons\Ghost.png" />
+    <Content Include="images\LoadoutIcons\Guardian.png" />
+    <Content Include="images\LoadoutIcons\Judge.png" />
+    <Content Include="images\LoadoutIcons\Marshal.png" />
+    <Content Include="images\LoadoutIcons\Odin.png" />
+    <Content Include="images\LoadoutIcons\Operator.png" />
+    <Content Include="images\LoadoutIcons\Outlaw.png" />
+    <Content Include="images\LoadoutIcons\Phantom.png" />
+    <Content Include="images\LoadoutIcons\Sheriff.png" />
+    <Content Include="images\LoadoutIcons\Shorty.png" />
+    <Content Include="images\LoadoutIcons\Spectre.png" />
+    <Content Include="images\LoadoutIcons\Stinger.png" />
+    <Content Include="images\LoadoutIcons\Vandal.png" />
     <None Include="images\AgentIcons\1_icon.png" />
     <None Include="images\AgentIcons\2_icon.png" />
     <None Include="images\AgentIcons\3_icon.png" />
