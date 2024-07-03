@@ -103,6 +103,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="images\LoadoutIcons\S1_Light_Shields.png" />
+    <Content Include="images\LoadoutIcons\S2_Heavy_Shields.png" />
     <None Include="images\LoadoutIcons\W18_Odin.png" />
     <None Include="images\LoadoutIcons\W17_Ares.png" />
     <None Include="images\LoadoutIcons\W16_Operator.png" />
