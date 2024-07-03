@@ -36,8 +36,10 @@
             // 
             // agentGenBtn
             // 
+            this.agentGenBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.agentGenBtn.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agentGenBtn.Location = new System.Drawing.Point(535, 430);
+            this.agentGenBtn.MinimumSize = new System.Drawing.Size(100, 100);
             this.agentGenBtn.Name = "agentGenBtn";
             this.agentGenBtn.Size = new System.Drawing.Size(100, 100);
             this.agentGenBtn.TabIndex = 1;
@@ -47,6 +49,7 @@
             // 
             // generatedAgentBtn
             // 
+            this.generatedAgentBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.generatedAgentBtn.BackColor = System.Drawing.Color.White;
             this.generatedAgentBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("generatedAgentBtn.BackgroundImage")));
             this.generatedAgentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -58,6 +61,7 @@
             this.generatedAgentBtn.Font = new System.Drawing.Font("Cascadia Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generatedAgentBtn.ForeColor = System.Drawing.Color.Yellow;
             this.generatedAgentBtn.Location = new System.Drawing.Point(430, 430);
+            this.generatedAgentBtn.MinimumSize = new System.Drawing.Size(100, 100);
             this.generatedAgentBtn.Name = "generatedAgentBtn";
             this.generatedAgentBtn.Size = new System.Drawing.Size(100, 100);
             this.generatedAgentBtn.TabIndex = 3;
@@ -67,9 +71,11 @@
             // 
             // genCounter
             // 
+            this.genCounter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.genCounter.BackColor = System.Drawing.Color.White;
             this.genCounter.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genCounter.Location = new System.Drawing.Point(325, 430);
+            this.genCounter.MinimumSize = new System.Drawing.Size(100, 100);
             this.genCounter.Name = "genCounter";
             this.genCounter.Size = new System.Drawing.Size(100, 100);
             this.genCounter.TabIndex = 4;
@@ -81,7 +87,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(646, 561);
             this.Controls.Add(this.genCounter);

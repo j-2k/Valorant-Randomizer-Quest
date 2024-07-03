@@ -103,24 +103,24 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="images\LoadoutIcons\Ares.png" />
-    <Content Include="images\LoadoutIcons\Bucky.png" />
-    <Content Include="images\LoadoutIcons\Bulldog.png" />
-    <Content Include="images\LoadoutIcons\Classic.png" />
-    <Content Include="images\LoadoutIcons\Frenzy.png" />
-    <Content Include="images\LoadoutIcons\Ghost.png" />
-    <Content Include="images\LoadoutIcons\Guardian.png" />
-    <Content Include="images\LoadoutIcons\Judge.png" />
-    <Content Include="images\LoadoutIcons\Marshal.png" />
-    <Content Include="images\LoadoutIcons\Odin.png" />
-    <Content Include="images\LoadoutIcons\Operator.png" />
-    <Content Include="images\LoadoutIcons\Outlaw.png" />
-    <Content Include="images\LoadoutIcons\Phantom.png" />
-    <Content Include="images\LoadoutIcons\Sheriff.png" />
-    <Content Include="images\LoadoutIcons\Shorty.png" />
-    <Content Include="images\LoadoutIcons\Spectre.png" />
-    <Content Include="images\LoadoutIcons\Stinger.png" />
-    <Content Include="images\LoadoutIcons\Vandal.png" />
+    <None Include="images\LoadoutIcons\W18_Odin.png" />
+    <None Include="images\LoadoutIcons\W17_Ares.png" />
+    <None Include="images\LoadoutIcons\W16_Operator.png" />
+    <None Include="images\LoadoutIcons\W15_Outlaw.png" />
+    <None Include="images\LoadoutIcons\W14_Marshal.png" />
+    <None Include="images\LoadoutIcons\W13_Vandal.png" />
+    <None Include="images\LoadoutIcons\W12_Phantom.png" />
+    <None Include="images\LoadoutIcons\W11_Guardian.png" />
+    <None Include="images\LoadoutIcons\W10_Bulldog.png" />
+    <None Include="images\LoadoutIcons\W9_Judge.png" />
+    <None Include="images\LoadoutIcons\W8_Bucky.png" />
+    <None Include="images\LoadoutIcons\W7_Spectre.png" />
+    <None Include="images\LoadoutIcons\W6_Stinger.png" />
+    <None Include="images\LoadoutIcons\W5_Sheriff.png" />
+    <None Include="images\LoadoutIcons\W4_Ghost.png" />
+    <None Include="images\LoadoutIcons\W3_Frenzy.png" />
+    <None Include="images\LoadoutIcons\W2_Shorty.png" />
+    <None Include="images\LoadoutIcons\W1_Classic.png" />
     <None Include="images\AgentIcons\1_icon.png" />
     <None Include="images\AgentIcons\2_icon.png" />
     <None Include="images\AgentIcons\3_icon.png" />
