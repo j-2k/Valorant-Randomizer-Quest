@@ -118,6 +118,60 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="W10_Bulldog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W10_Bulldog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W11_Guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W11_Guardian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W12_Phantom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W12_Phantom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W13_Vandal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W13_Vandal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W14_Marshal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W14_Marshal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W15_Outlaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W15_Outlaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W16_Operator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W16_Operator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W17_Ares" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W17_Ares.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W18_Odin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W18_Odin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W1_Classic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W1_Classic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W2_Shorty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W2_Shorty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W3_Frenzy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W3_Frenzy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W4_Ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W4_Ghost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W5_Sheriff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W5_Sheriff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W6_Stinger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W6_Stinger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W7_Spectre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W7_Spectre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W8_Bucky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W8_Bucky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W9_Judge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LoadoutIcons\W9_Judge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_10_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\AgentIcons\10_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
