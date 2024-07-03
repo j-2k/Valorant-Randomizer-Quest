@@ -31,5 +31,20 @@ namespace JumasValorantRandomizer
         {
 
         }
+
+        private void checkShieldBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkSecondaryBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lastBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

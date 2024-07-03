@@ -53,17 +53,24 @@
             this.W2 = new System.Windows.Forms.Button();
             this.W1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkShieldBox = new System.Windows.Forms.CheckBox();
+            this.checkSecondaryBox = new System.Windows.Forms.CheckBox();
+            this.lastBox = new System.Windows.Forms.CheckBox();
+            this.secondaryBox = new System.Windows.Forms.PictureBox();
+            this.primaryBox = new System.Windows.Forms.PictureBox();
+            this.shieldBox = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondaryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.primaryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shieldBox)).BeginInit();
             this.SuspendLayout();
             // 
             // loadoutGenBtn
             // 
             this.loadoutGenBtn.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadoutGenBtn.Location = new System.Drawing.Point(534, 448);
+            this.loadoutGenBtn.Location = new System.Drawing.Point(514, 448);
             this.loadoutGenBtn.Name = "loadoutGenBtn";
-            this.loadoutGenBtn.Size = new System.Drawing.Size(100, 100);
+            this.loadoutGenBtn.Size = new System.Drawing.Size(120, 100);
             this.loadoutGenBtn.TabIndex = 2;
             this.loadoutGenBtn.Text = "Generate Loadout";
             this.loadoutGenBtn.UseVisualStyleBackColor = true;
@@ -74,10 +81,10 @@
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Location = new System.Drawing.Point(536, 416);
+            this.textBox1.Location = new System.Drawing.Point(514, 417);
             this.textBox1.MaxLength = 5;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.Size = new System.Drawing.Size(121, 26);
             this.textBox1.TabIndex = 22;
             this.textBox1.Text = "9000";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -87,7 +94,7 @@
             // 
             this.moneyTitle.BackColor = System.Drawing.Color.Transparent;
             this.moneyTitle.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moneyTitle.Location = new System.Drawing.Point(536, 392);
+            this.moneyTitle.Location = new System.Drawing.Point(530, 393);
             this.moneyTitle.Name = "moneyTitle";
             this.moneyTitle.Size = new System.Drawing.Size(100, 21);
             this.moneyTitle.TabIndex = 23;
@@ -372,40 +379,82 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.shieldBox);
+            this.panel1.Controls.Add(this.primaryBox);
+            this.panel1.Controls.Add(this.secondaryBox);
             this.panel1.Location = new System.Drawing.Point(88, 326);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(441, 222);
+            this.panel1.Size = new System.Drawing.Size(415, 222);
             this.panel1.TabIndex = 28;
             // 
-            // checkBox1
+            // checkShieldBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(536, 326);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 17);
-            this.checkBox1.TabIndex = 29;
-            this.checkBox1.Text = "Consider Shields";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkShieldBox.AutoSize = true;
+            this.checkShieldBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkShieldBox.Location = new System.Drawing.Point(514, 326);
+            this.checkShieldBox.Name = "checkShieldBox";
+            this.checkShieldBox.Size = new System.Drawing.Size(122, 19);
+            this.checkShieldBox.TabIndex = 29;
+            this.checkShieldBox.Text = "Consider Shields";
+            this.checkShieldBox.UseVisualStyleBackColor = true;
+            this.checkShieldBox.CheckedChanged += new System.EventHandler(this.checkShieldBox_CheckedChanged);
             // 
-            // checkBox2
+            // checkSecondaryBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(536, 349);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(99, 17);
-            this.checkBox2.TabIndex = 30;
-            this.checkBox2.Text = "Add Secondary";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkSecondaryBox.AutoSize = true;
+            this.checkSecondaryBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSecondaryBox.Location = new System.Drawing.Point(514, 349);
+            this.checkSecondaryBox.Name = "checkSecondaryBox";
+            this.checkSecondaryBox.Size = new System.Drawing.Size(104, 19);
+            this.checkSecondaryBox.TabIndex = 30;
+            this.checkSecondaryBox.Text = "Add Secondary";
+            this.checkSecondaryBox.UseVisualStyleBackColor = true;
+            this.checkSecondaryBox.CheckedChanged += new System.EventHandler(this.checkSecondaryBox_CheckedChanged);
             // 
-            // checkBox3
+            // lastBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(536, 372);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(44, 17);
-            this.checkBox3.TabIndex = 31;
-            this.checkBox3.Text = "???";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.lastBox.AutoSize = true;
+            this.lastBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastBox.Location = new System.Drawing.Point(514, 372);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(44, 19);
+            this.lastBox.TabIndex = 31;
+            this.lastBox.Text = "???";
+            this.lastBox.UseVisualStyleBackColor = true;
+            this.lastBox.CheckedChanged += new System.EventHandler(this.lastBox_CheckedChanged);
+            // 
+            // secondaryBox
+            // 
+            this.secondaryBox.BackColor = System.Drawing.Color.Transparent;
+            this.secondaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
+            this.secondaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.secondaryBox.Location = new System.Drawing.Point(41, 152);
+            this.secondaryBox.Name = "secondaryBox";
+            this.secondaryBox.Size = new System.Drawing.Size(172, 67);
+            this.secondaryBox.TabIndex = 32;
+            this.secondaryBox.TabStop = false;
+            // 
+            // primaryBox
+            // 
+            this.primaryBox.BackColor = System.Drawing.Color.Transparent;
+            this.primaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W10_Bulldog;
+            this.primaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.primaryBox.Location = new System.Drawing.Point(3, 3);
+            this.primaryBox.Name = "primaryBox";
+            this.primaryBox.Size = new System.Drawing.Size(251, 143);
+            this.primaryBox.TabIndex = 33;
+            this.primaryBox.TabStop = false;
+            // 
+            // shieldBox
+            // 
+            this.shieldBox.BackColor = System.Drawing.Color.Transparent;
+            this.shieldBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S1_Light_Shields;
+            this.shieldBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.shieldBox.Location = new System.Drawing.Point(260, 35);
+            this.shieldBox.Name = "shieldBox";
+            this.shieldBox.Size = new System.Drawing.Size(150, 150);
+            this.shieldBox.TabIndex = 34;
+            this.shieldBox.TabStop = false;
             // 
             // LoadoutForm
             // 
@@ -413,9 +462,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(646, 561);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lastBox);
+            this.Controls.Add(this.checkSecondaryBox);
+            this.Controls.Add(this.checkShieldBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.S2);
             this.Controls.Add(this.S1);
@@ -445,6 +494,10 @@
             this.Name = "LoadoutForm";
             this.Text = "LoadoutForm";
             this.Load += new System.EventHandler(this.LoadoutForm_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.secondaryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.primaryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shieldBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,8 +530,11 @@
         private System.Windows.Forms.Button S1;
         private System.Windows.Forms.Button S2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkShieldBox;
+        private System.Windows.Forms.CheckBox checkSecondaryBox;
+        private System.Windows.Forms.CheckBox lastBox;
+        private System.Windows.Forms.PictureBox primaryBox;
+        private System.Windows.Forms.PictureBox secondaryBox;
+        private System.Windows.Forms.PictureBox shieldBox;
     }
 }
