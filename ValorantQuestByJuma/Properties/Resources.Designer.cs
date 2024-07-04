@@ -303,6 +303,16 @@ namespace JumasValorantRandomizer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap S0_No_Shields {
+            get {
+                object obj = ResourceManager.GetObject("S0_No_Shields", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap S1_Light_Shields {
             get {
                 object obj = ResourceManager.GetObject("S1_Light_Shields", resourceCulture);

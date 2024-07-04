@@ -31,6 +31,13 @@
             this.loadoutGenBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.moneyTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.checkShieldBox = new System.Windows.Forms.CheckBox();
+            this.checkSecondaryBox = new System.Windows.Forms.CheckBox();
+            this.lastBox = new System.Windows.Forms.CheckBox();
+            this.shieldBox = new System.Windows.Forms.PictureBox();
+            this.primaryBox = new System.Windows.Forms.PictureBox();
+            this.secondaryBox = new System.Windows.Forms.PictureBox();
             this.S2_1000 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
             this.S1_400 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
             this.S0_0 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
@@ -52,13 +59,6 @@
             this.W3_450 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
             this.W2_300 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
             this.W1_0 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.shieldBox = new System.Windows.Forms.PictureBox();
-            this.primaryBox = new System.Windows.Forms.PictureBox();
-            this.secondaryBox = new System.Windows.Forms.PictureBox();
-            this.checkShieldBox = new System.Windows.Forms.CheckBox();
-            this.checkSecondaryBox = new System.Windows.Forms.CheckBox();
-            this.lastBox = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shieldBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.primaryBox)).BeginInit();
@@ -86,7 +86,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 26);
             this.textBox1.TabIndex = 22;
-            this.textBox1.Text = "9000";
+            this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -100,6 +100,86 @@
             this.moneyTitle.TabIndex = 23;
             this.moneyTitle.Text = "Set Money";
             this.moneyTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.shieldBox);
+            this.panel1.Controls.Add(this.primaryBox);
+            this.panel1.Controls.Add(this.secondaryBox);
+            this.panel1.Location = new System.Drawing.Point(88, 326);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(415, 222);
+            this.panel1.TabIndex = 28;
+            // 
+            // checkShieldBox
+            // 
+            this.checkShieldBox.AutoSize = true;
+            this.checkShieldBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkShieldBox.Location = new System.Drawing.Point(514, 326);
+            this.checkShieldBox.Name = "checkShieldBox";
+            this.checkShieldBox.Size = new System.Drawing.Size(122, 19);
+            this.checkShieldBox.TabIndex = 29;
+            this.checkShieldBox.Text = "Consider Shields";
+            this.checkShieldBox.UseVisualStyleBackColor = true;
+            this.checkShieldBox.CheckedChanged += new System.EventHandler(this.checkShieldBox_CheckedChanged);
+            // 
+            // checkSecondaryBox
+            // 
+            this.checkSecondaryBox.AutoSize = true;
+            this.checkSecondaryBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSecondaryBox.Location = new System.Drawing.Point(514, 349);
+            this.checkSecondaryBox.Name = "checkSecondaryBox";
+            this.checkSecondaryBox.Size = new System.Drawing.Size(104, 19);
+            this.checkSecondaryBox.TabIndex = 30;
+            this.checkSecondaryBox.Text = "Add Secondary";
+            this.checkSecondaryBox.UseVisualStyleBackColor = true;
+            this.checkSecondaryBox.CheckedChanged += new System.EventHandler(this.checkSecondaryBox_CheckedChanged);
+            // 
+            // lastBox
+            // 
+            this.lastBox.AutoSize = true;
+            this.lastBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastBox.Location = new System.Drawing.Point(514, 372);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(44, 19);
+            this.lastBox.TabIndex = 31;
+            this.lastBox.Text = "???";
+            this.lastBox.UseVisualStyleBackColor = true;
+            this.lastBox.CheckedChanged += new System.EventHandler(this.lastBox_CheckedChanged);
+            // 
+            // shieldBox
+            // 
+            this.shieldBox.BackColor = System.Drawing.Color.Transparent;
+            this.shieldBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S1_Light_Shields;
+            this.shieldBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.shieldBox.Location = new System.Drawing.Point(282, 3);
+            this.shieldBox.Name = "shieldBox";
+            this.shieldBox.Size = new System.Drawing.Size(130, 130);
+            this.shieldBox.TabIndex = 34;
+            this.shieldBox.TabStop = false;
+            // 
+            // primaryBox
+            // 
+            this.primaryBox.BackColor = System.Drawing.Color.Transparent;
+            this.primaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W10_Bulldog;
+            this.primaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.primaryBox.Location = new System.Drawing.Point(3, 3);
+            this.primaryBox.Name = "primaryBox";
+            this.primaryBox.Size = new System.Drawing.Size(273, 216);
+            this.primaryBox.TabIndex = 33;
+            this.primaryBox.TabStop = false;
+            // 
+            // secondaryBox
+            // 
+            this.secondaryBox.BackColor = System.Drawing.Color.Transparent;
+            this.secondaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
+            this.secondaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.secondaryBox.Location = new System.Drawing.Point(282, 139);
+            this.secondaryBox.Name = "secondaryBox";
+            this.secondaryBox.Size = new System.Drawing.Size(130, 80);
+            this.secondaryBox.TabIndex = 32;
+            this.secondaryBox.TabStop = false;
             // 
             // S2_1000
             // 
@@ -131,7 +211,7 @@
             // 
             // S0_0
             // 
-            this.S0_0.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
+            this.S0_0.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S0_No_Shields;
             this.S0_0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.S0_0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.S0_0.FlatAppearance.BorderSize = 2;
@@ -375,86 +455,6 @@
             this.W1_0.Size = new System.Drawing.Size(99, 60);
             this.W1_0.TabIndex = 3;
             this.W1_0.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.shieldBox);
-            this.panel1.Controls.Add(this.primaryBox);
-            this.panel1.Controls.Add(this.secondaryBox);
-            this.panel1.Location = new System.Drawing.Point(88, 326);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(415, 222);
-            this.panel1.TabIndex = 28;
-            // 
-            // shieldBox
-            // 
-            this.shieldBox.BackColor = System.Drawing.Color.Transparent;
-            this.shieldBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S1_Light_Shields;
-            this.shieldBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.shieldBox.Location = new System.Drawing.Point(282, 3);
-            this.shieldBox.Name = "shieldBox";
-            this.shieldBox.Size = new System.Drawing.Size(130, 130);
-            this.shieldBox.TabIndex = 34;
-            this.shieldBox.TabStop = false;
-            // 
-            // primaryBox
-            // 
-            this.primaryBox.BackColor = System.Drawing.Color.Transparent;
-            this.primaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W10_Bulldog;
-            this.primaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.primaryBox.Location = new System.Drawing.Point(3, 3);
-            this.primaryBox.Name = "primaryBox";
-            this.primaryBox.Size = new System.Drawing.Size(273, 216);
-            this.primaryBox.TabIndex = 33;
-            this.primaryBox.TabStop = false;
-            // 
-            // secondaryBox
-            // 
-            this.secondaryBox.BackColor = System.Drawing.Color.Transparent;
-            this.secondaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
-            this.secondaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.secondaryBox.Location = new System.Drawing.Point(282, 139);
-            this.secondaryBox.Name = "secondaryBox";
-            this.secondaryBox.Size = new System.Drawing.Size(130, 80);
-            this.secondaryBox.TabIndex = 32;
-            this.secondaryBox.TabStop = false;
-            // 
-            // checkShieldBox
-            // 
-            this.checkShieldBox.AutoSize = true;
-            this.checkShieldBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkShieldBox.Location = new System.Drawing.Point(514, 326);
-            this.checkShieldBox.Name = "checkShieldBox";
-            this.checkShieldBox.Size = new System.Drawing.Size(122, 19);
-            this.checkShieldBox.TabIndex = 29;
-            this.checkShieldBox.Text = "Consider Shields";
-            this.checkShieldBox.UseVisualStyleBackColor = true;
-            this.checkShieldBox.CheckedChanged += new System.EventHandler(this.checkShieldBox_CheckedChanged);
-            // 
-            // checkSecondaryBox
-            // 
-            this.checkSecondaryBox.AutoSize = true;
-            this.checkSecondaryBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkSecondaryBox.Location = new System.Drawing.Point(514, 349);
-            this.checkSecondaryBox.Name = "checkSecondaryBox";
-            this.checkSecondaryBox.Size = new System.Drawing.Size(104, 19);
-            this.checkSecondaryBox.TabIndex = 30;
-            this.checkSecondaryBox.Text = "Add Secondary";
-            this.checkSecondaryBox.UseVisualStyleBackColor = true;
-            this.checkSecondaryBox.CheckedChanged += new System.EventHandler(this.checkSecondaryBox_CheckedChanged);
-            // 
-            // lastBox
-            // 
-            this.lastBox.AutoSize = true;
-            this.lastBox.Font = new System.Drawing.Font("Cascadia Code SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastBox.Location = new System.Drawing.Point(514, 372);
-            this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(44, 19);
-            this.lastBox.TabIndex = 31;
-            this.lastBox.Text = "???";
-            this.lastBox.UseVisualStyleBackColor = true;
-            this.lastBox.CheckedChanged += new System.EventHandler(this.lastBox_CheckedChanged);
             // 
             // LoadoutForm
             // 

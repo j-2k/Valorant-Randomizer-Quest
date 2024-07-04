@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +15,8 @@ namespace JumasValorantRandomizer
     {
         public class LoadoutButton : Button
         {
-            //Array now is sorted 0 - 5 sidearms,
-            //6 - 17 is reserved for weapons in correct order,
+            //Array now is sorted 0 - 4 sidearms,
+            //5 - 17 is reserved for weapons in correct order,
             //18 - 20 is reserved for shields in correct order, 21 is the length thus there is no 21st element!
             public int index = 0;
             public int price = 0;
@@ -47,7 +48,7 @@ namespace JumasValorantRandomizer
                 {
                     activeShieldItems.Add(index);
                 }
-                else if(index >= 6)
+                else if(index >= 5)
                 {
                     activePrimaryItems.Add(index);
                 }
@@ -63,7 +64,7 @@ namespace JumasValorantRandomizer
                 {
                     activeShieldItems.Remove(index);
                 }
-                else if (index >= 6)
+                else if (index >= 5)
                 {
                     activePrimaryItems.Remove(index);
                 }
@@ -130,11 +131,13 @@ namespace JumasValorantRandomizer
                     loadoutBtns[i].Click += new EventHandler(loadoutBtns[i].ToggleButton);
                     loadoutBtns[i].PerformClick();
                     
-                    //Array now is sorted 0 - 5 sidearms, 6 - 17 is reserved for weapons in correct order, 18 - 20 is reserved for shields in correct order, 21 is the length thus there is no 21st element!
+                    //Array now is sorted 0 - 4 sidearms, 5 - 17 is reserved for weapons in correct order, 18 - 20 is reserved for shields in correct order, 21 is the length thus there is no 21st element!
                 }
             }
             Console.WriteLine(loadoutBtns);
         }
+
+        List<int> combinedActiveList = new List<int>();
 
         private void loadoutGenBtn_Click(object sender, EventArgs e)
         {
@@ -145,17 +148,92 @@ namespace JumasValorantRandomizer
 
             //Money Check is the last function to be implemented, I will try finish everything else before handling this
 
-            if (checkSecondaryBox.Checked)
+            //this is disgusting, and i have not even yet added money checks & money management
+            if (checkSecondaryBox.Checked && activeSecondaryItems.Count > 0)
             {
-                primaryBox.BackgroundImage = loadoutBtns[rng.Next(6, 18)].BackgroundImage;
-                secondaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 6)].BackgroundImage;
+                if(activePrimaryItems.Count > 0) {
+                    //primaryBox.Visible = true;
+                    int rngPrimaryIndex = activePrimaryItems[rng.Next(activePrimaryItems.Count)];
+                    //primaryBox.BackgroundImage = loadoutBtns[rng.Next(6, 18)].BackgroundImage;
+                    primaryBox.BackgroundImage = loadoutBtns[rngPrimaryIndex].BackgroundImage;
+
+                    secondaryBox.Visible = true;
+                    int rngSecondaryIndex = activeSecondaryItems[rng.Next(activeSecondaryItems.Count)];
+                    //secondaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 6)].BackgroundImage;
+                    secondaryBox.BackgroundImage = loadoutBtns[rngSecondaryIndex].BackgroundImage;
+                }
+                else
+                {
+                    return;
+                }
             }
             else
             {
-                primaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 18)].BackgroundImage;
+                checkSecondaryBox.Checked = false;
+                secondaryBox.Visible = false;
+
+                //everything here is bad!
+                combinedActiveList.Clear();
+                foreach(int p in activePrimaryItems)
+                {
+                    combinedActiveList.Add(p);
+                }
+                foreach (int s in activeSecondaryItems)
+                {
+                    combinedActiveList.Add(s);
+                }
+
+                //Array.Sort(combinedActiveList.ToArray());
+
+                foreach (int i in combinedActiveList.ToArray())
+                {
+                    if (loadoutBtns[i].price > currentMoney)
+                    {
+                        combinedActiveList.Remove(i);
+                    }
+                }
+
+                if(combinedActiveList.Count > 0)
+                {
+                    primaryBox.Visible = true;
+                    int rngCombinedIndex = combinedActiveList[rng.Next(combinedActiveList.Count)];
+                    primaryBox.BackgroundImage = loadoutBtns[rngCombinedIndex].BackgroundImage;
+                }
+                else
+                {
+                    primaryBox.Visible = false;
+                }
+
+                /*
+                if(currentMoney >= 850)
+                {
+                    int rngPorS = rng.Next(2);
+                    if (rngPorS == 0)
+                    {
+                        int rngPriIndex = activePrimaryItems[rng.Next(activePrimaryItems.Count)];
+                        primaryBox.BackgroundImage = loadoutBtns[rngPriIndex].BackgroundImage;
+                    }
+                    else
+                    {
+                        int rngSecIndex = activeSecondaryItems[rng.Next(activeSecondaryItems.Count)];
+                        primaryBox.BackgroundImage = loadoutBtns[rngSecIndex].BackgroundImage;
+                    }
+                }
+                else
+                {
+                    int rngSecIndex = activeSecondaryItems[rng.Next(activeSecondaryItems.Count)];
+                    primaryBox.BackgroundImage = loadoutBtns[rngSecIndex].BackgroundImage;
+                }
+
+
+
+                int rngMixIndex = activePrimaryItems[rng.Next(activePrimaryItems.Count)];
+                //primaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 18)].BackgroundImage;
+                primaryBox.BackgroundImage = loadoutBtns[rngMixIndex].BackgroundImage;
+                */
             }
 
-            if(checkShieldBox.Checked && activeShieldItems.Count > 0)
+            if (checkShieldBox.Checked && activeShieldItems.Count > 0)
             {
                 shieldBox.Visible = true;
                 int rngShieldIndex = activeShieldItems[rng.Next(activeShieldItems.Count)];
@@ -217,6 +295,10 @@ namespace JumasValorantRandomizer
         private void checkSecondaryBox_CheckedChanged(object sender, EventArgs e)
         {
             //secondaryBox.Visible = checkSecondaryBox.Checked;
+            if (!checkSecondaryBox.Checked)
+            {
+                secondaryBox.Visible = false;
+            }
         }
 
         private void lastBox_CheckedChanged(object sender, EventArgs e)
