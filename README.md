@@ -11,7 +11,7 @@ WIP Pictures go here!
     - Select specific **menu items** to draw into the pool for random generation
     - Any single weapon only (main) OR Primary & Secondary weapon (option)
     - Consider shields into the mix (option)
-    - Should primary take priority with current money over secondary in randomization if both primary & secondary option is chosen??? (thinking of adding this not sure yet)
+    - ~~Should primary take priority with current money over secondary in randomization if both primary & secondary option is chosen???~~ (thinking of adding this not sure yet)
 
 
 ### Extra Features: (Not a priority/might not be included)
