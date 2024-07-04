@@ -15,7 +15,6 @@ namespace JumasValorantRandomizer
 
 
         List<int> agentListReference;
-
         public AgentButton(int sizeX, int sizeY, int posX, int posY, int incAgentIndex, ref List<int> activeAgentList)
         {
             this.Text = "";
