@@ -14,17 +14,63 @@ namespace JumasValorantRandomizer
     {
         public class LoadoutButton : Button
         {
+            //Array now is sorted 0 - 5 sidearms,
+            //6 - 17 is reserved for weapons in correct order,
+            //18 - 20 is reserved for shields in correct order, 21 is the length thus there is no 21st element!
             public int index = 0;
             public int price = 0;
-            bool isToggled = false;
+            public bool isToggled = false;
 
             public void ToggleButton(object sender, EventArgs e)
             {
                 isToggled = !isToggled;
-
+                
                 //add this to the list of active items
+                if (isToggled)
+                {
+                    //activeLoadoutItems.Add(index);
+                    InsertToCorrectList();
+                }
+                else
+                {
+                    RemoveFromCorrectList();
+                    //activeLoadoutItems.Remove(index);
+                }
 
                 this.FlatAppearance.BorderColor = isToggled ? Color.SkyBlue : Color.Black;
+            }
+
+            //ref to the comment on line 49, im doing this the shitty way since im running out of time
+            void InsertToCorrectList()
+            {
+                if(index >= 18)
+                {
+                    activeShieldItems.Add(index);
+                }
+                else if(index >= 6)
+                {
+                    activePrimaryItems.Add(index);
+                }
+                else if (index >= 0)
+                {
+                    activeSecondaryItems.Add(index);
+                }
+            }
+
+            void RemoveFromCorrectList()
+            {
+                if (index >= 18)
+                {
+                    activeShieldItems.Remove(index);
+                }
+                else if (index >= 6)
+                {
+                    activePrimaryItems.Remove(index);
+                }
+                else if (index >= 0)
+                {
+                    activeSecondaryItems.Remove(index);
+                }
             }
         }
 
@@ -36,15 +82,19 @@ namespace JumasValorantRandomizer
         const int maxLoadoutBtns = 21;
         //Holds all weapons & shield buttons!
         LoadoutButton[] loadoutBtns = new LoadoutButton[maxLoadoutBtns];
-        List<int> activeLoadoutItems = new List<int>();
+        //static List<int> activeLoadoutItems = new List<int>();// couldve handled it all in 1 list but im going to do it the dumb way for this part since im running out of time
+        static List<int> activePrimaryItems = new List<int>();
+        static List<int> activeSecondaryItems = new List<int>();
+        static List<int> activeShieldItems = new List<int>();
 
         Random rng = new Random();
 
         private void LoadoutForm_Load(object sender, EventArgs e)
         {
+            //activeLoadoutItems.Clear();
+            secondaryBox.Visible = checkSecondaryBox.Checked;
+            shieldBox.Visible = checkShieldBox.Checked;
             primaryBox.BackgroundImage = null;
-            secondaryBox.BackgroundImage = null;
-            shieldBox.BackgroundImage = null;
             //int loadoutIndex = 0;
             int arrayOffset = 0;
             
@@ -69,21 +119,18 @@ namespace JumasValorantRandomizer
                     //if (c is Button btn &&...
                     //LoadoutButton lb = (LoadoutButton) btn //will not work! so i use changed the whole button class at the initalize component stage
 
-
                     arrayOffset = btn.Name[0] == 'S' ? 19 : 0;
                     string[] btnInfo = btn.Name.Split('_');
                     int i = Int32.Parse(btnInfo[0].Substring(1)) - 1 + arrayOffset;
                     int cost = Int32.Parse(btnInfo[1]);
 
-
-
                     loadoutBtns[i] = btn;
                     loadoutBtns[i].price = cost;
                     loadoutBtns[i].index = i;
                     loadoutBtns[i].Click += new EventHandler(loadoutBtns[i].ToggleButton);
-
-
-                    //Array now is sorted 0 - 17 is reserved for weapons in correct order, 18 - 20 is reserved for shields in correct order, 21 is the length thus there is no 21st element!
+                    loadoutBtns[i].PerformClick();
+                    
+                    //Array now is sorted 0 - 5 sidearms, 6 - 17 is reserved for weapons in correct order, 18 - 20 is reserved for shields in correct order, 21 is the length thus there is no 21st element!
                 }
             }
             Console.WriteLine(loadoutBtns);
@@ -100,17 +147,23 @@ namespace JumasValorantRandomizer
 
             if (checkSecondaryBox.Checked)
             {
-
+                primaryBox.BackgroundImage = loadoutBtns[rng.Next(6, 18)].BackgroundImage;
+                secondaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 6)].BackgroundImage;
             }
-
-            if(checkShieldBox.Checked)
+            else
             {
-
+                primaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 18)].BackgroundImage;
             }
 
-            primaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 18)].BackgroundImage;
-            secondaryBox.BackgroundImage = loadoutBtns[rng.Next(0, 6)].BackgroundImage;
-            shieldBox.BackgroundImage = loadoutBtns[rng.Next(18, 21)].BackgroundImage;
+            if(checkShieldBox.Checked && activeShieldItems.Count > 0)
+            {
+                shieldBox.Visible = true;
+                int rngShieldIndex = activeShieldItems[rng.Next(activeShieldItems.Count)];
+                //shieldBox.BackgroundImage = loadoutBtns[rng.Next(18, 21)].BackgroundImage;
+                shieldBox.BackgroundImage = loadoutBtns[rngShieldIndex].BackgroundImage;
+            }
+
+            //activeLoadoutItems.Capacity
         }
 
         int currentMoney = 0;
@@ -154,12 +207,16 @@ namespace JumasValorantRandomizer
 
         private void checkShieldBox_CheckedChanged(object sender, EventArgs e)
         {
-            shieldBox.Visible = checkShieldBox.Checked;
+            //shieldBox.Visible = checkShieldBox.Checked;
+            if(!checkShieldBox.Checked)
+            {
+                shieldBox.Visible = false;
+            }
         }
 
         private void checkSecondaryBox_CheckedChanged(object sender, EventArgs e)
         {
-            secondaryBox.Visible = checkSecondaryBox.Checked;
+            //secondaryBox.Visible = checkSecondaryBox.Checked;
         }
 
         private void lastBox_CheckedChanged(object sender, EventArgs e)

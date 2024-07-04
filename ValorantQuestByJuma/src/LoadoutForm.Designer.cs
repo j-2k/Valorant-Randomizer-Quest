@@ -31,27 +31,27 @@
             this.loadoutGenBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.moneyTitle = new System.Windows.Forms.Label();
-            this.S2_1000 = new LoadoutButton();
-            this.S1_400 = new LoadoutButton();
-            this.S0_0 = new LoadoutButton();
-            this.W18_3200 = new LoadoutButton();
-            this.W17_1600 = new LoadoutButton();
-            this.W16_4700 = new LoadoutButton();
-            this.W15_2400 = new LoadoutButton();
-            this.W13_2900 = new LoadoutButton();
-            this.W12_2900 = new LoadoutButton();
-            this.W11_2250 = new LoadoutButton();
-            this.W9_1850  = new LoadoutButton();
-            this.W8_850   = new LoadoutButton();
-            this.W7_1600  = new LoadoutButton();
-            this.W14_950  = new LoadoutButton();
-            this.W10_2050 = new LoadoutButton();
-            this.W5_800   = new LoadoutButton();
-            this.W6_1100  = new LoadoutButton();
-            this.W4_500   = new LoadoutButton();
-            this.W3_450   = new LoadoutButton();
-            this.W2_300   = new LoadoutButton();
-            this.W1_0     = new LoadoutButton();
+            this.S2_1000 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.S1_400 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.S0_0 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W18_3200 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W17_1600 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W16_4700 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W15_2400 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W13_2900 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W12_2900 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W11_2250 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W9_1850 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W8_850 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W7_1600 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W14_950 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W10_2050 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W5_800 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W6_1100 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W4_500 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W3_450 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W2_300 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
+            this.W1_0 = new JumasValorantRandomizer.LoadoutForm.LoadoutButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.shieldBox = new System.Windows.Forms.PictureBox();
             this.primaryBox = new System.Windows.Forms.PictureBox();
@@ -106,7 +106,7 @@
             this.S2_1000.BackColor = System.Drawing.Color.Silver;
             this.S2_1000.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S2_Heavy_Shields;
             this.S2_1000.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.S2_1000.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.S2_1000.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.S2_1000.FlatAppearance.BorderSize = 2;
             this.S2_1000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.S2_1000.Location = new System.Drawing.Point(12, 478);
@@ -120,7 +120,7 @@
             this.S1_400.BackColor = System.Drawing.Color.Silver;
             this.S1_400.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S1_Light_Shields;
             this.S1_400.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.S1_400.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.S1_400.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.S1_400.FlatAppearance.BorderSize = 2;
             this.S1_400.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.S1_400.Location = new System.Drawing.Point(12, 402);
@@ -133,7 +133,7 @@
             // 
             this.S0_0.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
             this.S0_0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.S0_0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.S0_0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.S0_0.FlatAppearance.BorderSize = 2;
             this.S0_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.S0_0.Location = new System.Drawing.Point(12, 326);
@@ -146,7 +146,7 @@
             // 
             this.W18_3200.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W18_Odin;
             this.W18_3200.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W18_3200.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W18_3200.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W18_3200.FlatAppearance.BorderSize = 2;
             this.W18_3200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W18_3200.Location = new System.Drawing.Point(453, 245);
@@ -159,7 +159,7 @@
             // 
             this.W17_1600.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W17_Ares;
             this.W17_1600.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W17_1600.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W17_1600.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W17_1600.FlatAppearance.BorderSize = 2;
             this.W17_1600.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W17_1600.Location = new System.Drawing.Point(452, 184);
@@ -172,7 +172,7 @@
             // 
             this.W16_4700.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W16_Operator;
             this.W16_4700.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W16_4700.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W16_4700.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W16_4700.FlatAppearance.BorderSize = 2;
             this.W16_4700.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W16_4700.Location = new System.Drawing.Point(452, 128);
@@ -185,7 +185,7 @@
             // 
             this.W15_2400.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W15_Outlaw;
             this.W15_2400.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W15_2400.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W15_2400.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W15_2400.FlatAppearance.BorderSize = 2;
             this.W15_2400.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W15_2400.Location = new System.Drawing.Point(452, 71);
@@ -198,7 +198,7 @@
             // 
             this.W13_2900.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W13_Vandal;
             this.W13_2900.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W13_2900.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W13_2900.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W13_2900.FlatAppearance.BorderSize = 2;
             this.W13_2900.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W13_2900.Location = new System.Drawing.Point(269, 230);
@@ -211,7 +211,7 @@
             // 
             this.W12_2900.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W12_Phantom;
             this.W12_2900.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W12_2900.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W12_2900.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W12_2900.FlatAppearance.BorderSize = 2;
             this.W12_2900.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W12_2900.Location = new System.Drawing.Point(271, 152);
@@ -224,7 +224,7 @@
             // 
             this.W11_2250.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W11_Guardian;
             this.W11_2250.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W11_2250.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W11_2250.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W11_2250.FlatAppearance.BorderSize = 2;
             this.W11_2250.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W11_2250.Location = new System.Drawing.Point(270, 78);
@@ -237,7 +237,7 @@
             // 
             this.W9_1850.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W9_Judge;
             this.W9_1850.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W9_1850.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W9_1850.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W9_1850.FlatAppearance.BorderSize = 2;
             this.W9_1850.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W9_1850.Location = new System.Drawing.Point(117, 233);
@@ -250,7 +250,7 @@
             // 
             this.W8_850.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W8_Bucky;
             this.W8_850.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W8_850.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W8_850.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W8_850.FlatAppearance.BorderSize = 2;
             this.W8_850.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W8_850.Location = new System.Drawing.Point(117, 167);
@@ -263,7 +263,7 @@
             // 
             this.W7_1600.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W7_Spectre;
             this.W7_1600.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W7_1600.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W7_1600.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W7_1600.FlatAppearance.BorderSize = 2;
             this.W7_1600.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W7_1600.Location = new System.Drawing.Point(116, 88);
@@ -276,7 +276,7 @@
             // 
             this.W14_950.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W14_Marshal;
             this.W14_950.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W14_950.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W14_950.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W14_950.FlatAppearance.BorderSize = 2;
             this.W14_950.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W14_950.Location = new System.Drawing.Point(453, 12);
@@ -289,7 +289,7 @@
             // 
             this.W10_2050.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W10_Bulldog;
             this.W10_2050.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W10_2050.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W10_2050.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W10_2050.FlatAppearance.BorderSize = 2;
             this.W10_2050.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W10_2050.Location = new System.Drawing.Point(269, 12);
@@ -302,7 +302,7 @@
             // 
             this.W5_800.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
             this.W5_800.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W5_800.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W5_800.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W5_800.FlatAppearance.BorderSize = 2;
             this.W5_800.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W5_800.Location = new System.Drawing.Point(12, 249);
@@ -315,7 +315,7 @@
             // 
             this.W6_1100.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W6_Stinger;
             this.W6_1100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W6_1100.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W6_1100.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W6_1100.FlatAppearance.BorderSize = 2;
             this.W6_1100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W6_1100.Location = new System.Drawing.Point(117, 12);
@@ -328,7 +328,7 @@
             // 
             this.W4_500.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W4_Ghost;
             this.W4_500.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W4_500.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W4_500.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W4_500.FlatAppearance.BorderSize = 2;
             this.W4_500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W4_500.Location = new System.Drawing.Point(12, 199);
@@ -341,7 +341,7 @@
             // 
             this.W3_450.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W3_Frenzy;
             this.W3_450.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W3_450.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W3_450.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W3_450.FlatAppearance.BorderSize = 2;
             this.W3_450.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W3_450.Location = new System.Drawing.Point(12, 128);
@@ -354,7 +354,7 @@
             // 
             this.W2_300.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W2_Shorty;
             this.W2_300.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W2_300.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W2_300.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W2_300.FlatAppearance.BorderSize = 2;
             this.W2_300.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W2_300.Location = new System.Drawing.Point(12, 78);
@@ -367,7 +367,7 @@
             // 
             this.W1_0.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W1_Classic;
             this.W1_0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.W1_0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.W1_0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.W1_0.FlatAppearance.BorderSize = 2;
             this.W1_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.W1_0.Location = new System.Drawing.Point(12, 12);
@@ -392,9 +392,9 @@
             this.shieldBox.BackColor = System.Drawing.Color.Transparent;
             this.shieldBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.S1_Light_Shields;
             this.shieldBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.shieldBox.Location = new System.Drawing.Point(260, 35);
+            this.shieldBox.Location = new System.Drawing.Point(282, 3);
             this.shieldBox.Name = "shieldBox";
-            this.shieldBox.Size = new System.Drawing.Size(150, 150);
+            this.shieldBox.Size = new System.Drawing.Size(130, 130);
             this.shieldBox.TabIndex = 34;
             this.shieldBox.TabStop = false;
             // 
@@ -405,7 +405,7 @@
             this.primaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.primaryBox.Location = new System.Drawing.Point(3, 3);
             this.primaryBox.Name = "primaryBox";
-            this.primaryBox.Size = new System.Drawing.Size(251, 143);
+            this.primaryBox.Size = new System.Drawing.Size(273, 216);
             this.primaryBox.TabIndex = 33;
             this.primaryBox.TabStop = false;
             // 
@@ -414,9 +414,9 @@
             this.secondaryBox.BackColor = System.Drawing.Color.Transparent;
             this.secondaryBox.BackgroundImage = global::JumasValorantRandomizer.Properties.Resources.W5_Sheriff;
             this.secondaryBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.secondaryBox.Location = new System.Drawing.Point(41, 152);
+            this.secondaryBox.Location = new System.Drawing.Point(282, 139);
             this.secondaryBox.Name = "secondaryBox";
-            this.secondaryBox.Size = new System.Drawing.Size(172, 67);
+            this.secondaryBox.Size = new System.Drawing.Size(130, 80);
             this.secondaryBox.TabIndex = 32;
             this.secondaryBox.TabStop = false;
             // 
