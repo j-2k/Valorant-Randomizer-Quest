@@ -15,6 +15,9 @@ WIP Pictures go here!
 
 
 ### Extra Features: (Not a priority/might not be included)
+- Consider the money when generating!
+  - 1
+  - 2
 - Generate a random choice of the following categories:
   - Abilities
   - Rules?
