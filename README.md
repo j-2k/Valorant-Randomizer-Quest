@@ -1,5 +1,15 @@
 # Valorant Randomizer
-A simple and funny software idea for my friends. Simply generates a random weapon &amp; agent to use depending on multiple factors, with maybe some... twists I guess?
+A simple and funny software idea for my friends. Simply generates a random weapon &amp; agent to use depending on multiple factors, with maybe some... twists I guess?  
+Oh, and tested the randomizer with my friends & they loved it!
+
+---
+
+### CURRENT ISSUES ON VERSION PRE-RELEASE 0.9!
+-
+- 
+- 
+
+---
 
 WIP Pictures go here!
 
