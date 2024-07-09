@@ -5,9 +5,10 @@ Oh, and tested the randomizer with my friends & they loved it!
 ---
 
 ### CURRENT ISSUES ON VERSION PRE-RELEASE 0.9!
--
-- 
-- 
+- Money is IGNORED when generating with the secondary toggle ON
+- When Shield Toggles are ON, Money is IGNORED again.
+  - To elaborate, if no toggles are enabled, you will recieve a single random weapon from the list of weapons that is ENABLED, however, the generated weapon is taking into consideration the current amount of money set (that means if you have 900 & assume you have all weapons highlighted except pistols, you will always get a bucky). Now if you set on shields you can recieve a weapon with a shield type that can exceed your current amount of money, this is the issue.
+- There are some other very minor bugs I saw at the start when my friends tested but im not sure iirc how to reproduce them.
 
 ---
 
