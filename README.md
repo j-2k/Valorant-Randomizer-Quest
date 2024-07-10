@@ -26,9 +26,13 @@ WIP Pictures go here!
 
 
 ### Extra Features: (Not a priority/might not be included)
-- Consider the money when generating!
-  - 1
-  - 2
+- Consider the money when random generating
+  - Primary Weapon
+  - Primary & Secondary Weapon
+  - Shields
+  - All together (Primary, Secondary, Shields)
+  - Should there be a priority queue for money spent??? or should it be all equal???
+  - etc
 - Generate a random choice of the following categories:
   - Abilities
   - Rules?
