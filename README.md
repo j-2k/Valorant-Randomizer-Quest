@@ -2,10 +2,12 @@
 A simple and funny software idea for my friends. Simply generates a random weapon &amp; agent to use depending on multiple factors, with maybe some... twists I guess?  
 Oh, and tested the randomizer with my friends & they loved it!
 
+## THE EXECUTABLE IS BEING DETECTED AS A VIRUS & IS A FALSE WARNING, YOU CAN CHECK THE SOURCE ZIP IN THE RELEASES.
+- [Releases](https://github.com/j-2k/Valorant-Randomizer-Quest/tags) > [v0.9](https://github.com/j-2k/Valorant-Randomizer-Quest/releases/tag/v0.9)
+
 ---
 
 ### CURRENT ISSUES ON VERSION PRE-RELEASE 0.9!
-- *THE EXECUTABLE IS BEING DETECTED AS A VIRUS & IS A FALSE WARNING, YOU CAN CHECK THE SOURCE ZIP IN THE RELEASES.*
 - Money is IGNORED when generating with the secondary toggle ON
 - When Shield Toggles are ON, Money is IGNORED again.
   - To elaborate, if no toggles are enabled, you will recieve a single random weapon from the list of weapons that is ENABLED, however, the generated weapon is taking into consideration the current amount of money set (that means if you have 900 & assume you have all weapons highlighted except pistols, you will always get a bucky). Now if you set on shields you can recieve a weapon with a shield type that can exceed your current amount of money, this is the issue.
